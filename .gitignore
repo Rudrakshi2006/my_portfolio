@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.local
+.claude
+*.mp4
+
+my intro video.mp4
