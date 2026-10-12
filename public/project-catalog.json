@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Research Topic Recommendation & Feasibility Analysis",
+    "genre": "Solo • Multi-agent AI • Research",
+    "description": "A multi-agent research discovery system that recommends evidence-backed, novel, feasible topics from a researcher’s interests, skills, available resources and timeline."
+  },
+  {
+    "name": "MemoryLens",
+    "genre": "Offline AI • RAG • Semantic Search",
+    "description": "Offline, privacy-preserving file assistant for searching and chatting with local PDFs, codebases and text using semantic retrieval and summarization."
+  },
+  {
+    "name": "CycleCura",
+    "genre": "Team Lead • Machine Learning • Health",
+    "description": "Personalized menstrual cycle prediction and PCOS/PCOD risk awareness using machine learning, feature engineering and historical cycle data; designed for awareness, not diagnosis."
+  },
+  {
+    "name": "Agriculture Price Prediction",
+    "genre": "Machine Learning • IEEE Research",
+    "description": "Stacking ensemble learning to forecast agricultural commodity prices using historical market data, engineered features and model evaluation."
+  },
+  {
+    "name": "TrendPlus",
+    "genre": "Data Analytics • Intelligent Insights",
+    "description": "Trend analysis platform for discovering emerging patterns and transforming complex data into organized, actionable research insights."
+  },
+  {
+    "name": "LungTwin",
+    "genre": "HealthTech • Digital Twin • Visualization",
+    "description": "AI-assisted lung digital twin concept for visualizing anatomical structures and exploring disease-related changes for medical education and research."
+  },
+  {
+    "name": "SIT Chatbot",
+    "genre": "Campus • NLP • Chatbot",
+    "description": "Conversational college information assistant for questions about academics, admissions, facilities, departments and institutional services."
+  },
+  {
+    "name": "Personalized Learning Path Recommender",
+    "genre": "In Progress • NLP • Recommender",
+    "description": "Semantic retrieval system ranking Top-10 relevant learning paths from learner reviews using embedding-based matching and multi-stage candidate ranking."
+  },
+  {
+    "name": "EkLink — Unified Smart Campus Ecosystem",
+    "genre": "Upcoming • Smart Campus • SSO",
+    "description": "One identity, five connected campus applications: TemplateOS, Infivoice, ApproveIt, Attendie and SlotIt, linked by SSO and role-based access."
+  }
+]
