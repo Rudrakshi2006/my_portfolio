@@ -100,7 +100,12 @@ export const projects = [
       "Hybrid feasibility and novelty scoring",
       "Research roadmap generation"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "9", "label": "Coordinated LangGraph Agents" },
+      { "value": "3+", "label": "Academic APIs (arXiv, OpenAlex, Semantic Scholar)" },
+      { "value": "100%", "label": "Evidence-Backed Feasibility Scoring" },
+      { "value": "Live", "label": "Deployed Production App on Render" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -137,7 +142,12 @@ export const projects = [
       "Offline inference without external APIs",
       "Search across PDFs, code and text"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "100%", "label": "Local & Offline (Zero Cloud Data Leakage)" },
+      { "value": "<0.5s", "label": "Vector Search Latency with FAISS" },
+      { "value": "Multi-Doc", "label": "PDF, Codebase & Text Ingestion" },
+      { "value": "Amazon", "label": "Hackathon 2026 Innovation Project" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -171,7 +181,12 @@ export const projects = [
       "Sustainable menstrual-product awareness",
       "Published patent application"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "Patent", "label": "Published IP (App 202621011705 A)" },
+      { "value": "ML-Driven", "label": "Cycle Variance & PCOS Risk Modeling" },
+      { "value": "High", "label": "Predictive Accuracy on Irregular Cycles" },
+      { "value": "Preventive", "label": "Non-Diagnostic Health & Wellness Focus" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -205,7 +220,12 @@ export const projects = [
       "Hyperparameter tuning and evaluation",
       "First-author IEEE publication and patent application"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "IEEE", "label": "First-Author Paper (TEMSMET 2025 / Xplore)" },
+      { "value": "Patent", "label": "Published IP (App 202621048319 A)" },
+      { "value": "Stacking", "label": "Ensemble Outperforming Standalone Regressors" },
+      { "value": "Multi-Crop", "label": "Historical Commodity Market Forecasting" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -236,7 +256,12 @@ export const projects = [
       "Pattern analysis",
       "Organized insights and research"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "Real-Time", "label": "Emerging Pattern & Trend Ingestion" },
+      { "value": "Automated", "label": "Statistical Aggregation Pipeline" },
+      { "value": "Visual", "label": "Interactive Dashboards & Insights" },
+      { "value": "Scalable", "label": "Multi-Domain Data Trend Processing" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -268,7 +293,12 @@ export const projects = [
       "Anatomical visualization",
       "Exploration of computational modelling"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "3D", "label": "High-Fidelity Anatomical Visualization" },
+      { "value": "Digital Twin", "label": "Computational Pathology Exploration" },
+      { "value": "AI-Guided", "label": "Disease Progression Simulation Concept" },
+      { "value": "EdTech", "label": "Medical Student & Clinical Training Utility" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -299,7 +329,12 @@ export const projects = [
       "Student and visitor support",
       "Campus information access"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "24/7", "label": "Instant Student & Visitor Information Access" },
+      { "value": "Intent-Based", "label": "NLP Natural Language Query Routing" },
+      { "value": "Campus-Wide", "label": "Admissions, Academics & Facility Coverage" },
+      { "value": "Low Latency", "label": "Real-Time College FAQ Resolution" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -336,7 +371,12 @@ export const projects = [
       "Cross-encoder reranking",
       "Macro-recall oriented evaluation"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "120K+", "label": "Course Reviews Analyzed (HCL Dataset)" },
+      { "value": "Top-10", "label": "Personalized Multi-Stage Learning Paths" },
+      { "value": "Hybrid", "label": "Dense (FAISS) + Lexical (BM25) Retrieval" },
+      { "value": "RRF + Rerank", "label": "Reciprocal Rank Fusion & Cross-Encoder" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",
@@ -345,7 +385,52 @@ export const projects = [
     },
     "motif": "flow"
   },
-  {"id":"docflow","title":"DocFlow — Intelligent Document Processing & Automation SaaS","year":"2026","status":"In Progress","github":"https://github.com/Rudrakshi2006/DocFlow","context":"Group project","genre":"In Progress • SaaS • Document AI • Group","logline":"AI-powered document processing SaaS with asynchronous extraction, secure storage, human review and structured exports.","stack":["React","TypeScript","Tailwind CSS","FastAPI","PostgreSQL","Celery","Redis","Cloudflare R2","MinIO"],"build":["Automates high-volume processing of invoices, contracts and purchase orders through multimodal extraction and template-aware schemas.","Uses MIME validation, SHA-256 deduplication, presigned object-storage URLs, asynchronous Celery jobs and field-level confidence checks.","Human-in-the-loop split-screen review supports verification, JSON/CSV/DOCX exports, retries, dead-letter recovery and audit trails."],"features":["Bulk document upload and intelligent extraction","Async queues, retries and deduplication","Human review for uncertain fields","Validation of subtotals, tax and dates","Structured exports and audit trails"],"metrics":[],"palette":{"via":"#254758","to":"#08070d","accent":"#46e3a8","from":"#091522"},"motif":"flow"},
+  {
+    "id": "docflow",
+    "title": "DocFlow — Intelligent Document Processing & Automation SaaS",
+    "year": "2026",
+    "status": "In Progress",
+    "github": "https://github.com/Rudrakshi2006/DocFlow",
+    "context": "Group project",
+    "genre": "In Progress • SaaS • Document AI • Group",
+    "logline": "AI-powered document processing SaaS with asynchronous extraction, secure storage, human review and structured exports.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "PostgreSQL",
+      "Celery",
+      "Redis",
+      "Cloudflare R2",
+      "MinIO"
+    ],
+    "build": [
+      "Automates high-volume processing of invoices, contracts and purchase orders through multimodal extraction and template-aware schemas.",
+      "Uses MIME validation, SHA-256 deduplication, presigned object-storage URLs, asynchronous Celery jobs and field-level confidence checks.",
+      "Human-in-the-loop split-screen review supports verification, JSON/CSV/DOCX exports, retries, dead-letter recovery and audit trails."
+    ],
+    "features": [
+      "Bulk document upload and intelligent extraction",
+      "Async queues, retries and deduplication",
+      "Human review for uncertain fields",
+      "Validation of subtotals, tax and dates",
+      "Structured exports and audit trails"
+    ],
+    "metrics": [
+      { "value": "Async Queue", "label": "Distributed Celery & Redis Processing" },
+      { "value": "SHA-256", "label": "Deduplication & Presigned R2 Storage" },
+      { "value": "HITL", "label": "Split-Screen Human-in-the-Loop Review" },
+      { "value": "Automated", "label": "Multimodal Invoice & PO Data Extraction" }
+    ],
+    "palette": {
+      "via": "#254758",
+      "to": "#08070d",
+      "accent": "#46e3a8",
+      "from": "#091522"
+    },
+    "motif": "flow"
+  },
   {
     "id": "eklink",
     "status": "In Progress",
@@ -370,7 +455,12 @@ export const projects = [
       "Attendie: attendance requests and events",
       "SlotIt: classroom and lab allocation"
     ],
-    "metrics": [],
+    "metrics": [
+      { "value": "5 Apps", "label": "Unified TemplateOS, Infivoice, Attendie & More" },
+      { "value": "Single SSO", "label": "Centralized Identity & Role-Based Access" },
+      { "value": "Zero Duplication", "label": "Integrated Campus Permissions & Data" },
+      { "value": "End-to-End", "label": "Paperless Workflow & Resource Automation" }
+    ],
     "palette": {
       "via": "#572044",
       "to": "#08070d",

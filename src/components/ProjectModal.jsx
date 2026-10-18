@@ -71,17 +71,21 @@ export default function ProjectModal({ project, onClose, onSwitch }) {
             {project.demo && (<a href={project.demo} target="_blank" rel="noreferrer" className="mt-4 inline-flex min-h-12 items-center rounded-md border border-white/25 px-6 text-sm font-bold text-bone hover:border-bone">Live Demo ↗</a>)}
             {project.status === 'In Progress' && (<p className="mt-3 text-xs font-semibold uppercase tracking-widest text-[#ffb547]">● In Progress</p>)}
             {/* impact */}
-            <motion.section variants={block} className="mt-12">
-              <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">Result / Impact</h3>
-              <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-3 lg:grid-cols-5">
-                {project.metrics.map((m, i) => (<motion.div key={m.label} className="bg-ink p-4 sm:p-5" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5 + i * 0.07, duration: 0.5, ease: EASE }}>
-                    <p className="font-display text-4xl leading-none text-bone sm:text-5xl" style={{ color: i === 0 ? project.palette.accent : undefined }}>
-                      {m.value}
-                    </p>
-                    <p className="mt-2 text-xs leading-snug text-mist">{m.label}</p>
-                  </motion.div>))}
-              </div>
-            </motion.section>
+            {project.metrics && project.metrics.length > 0 && (
+              <motion.section variants={block} className="mt-12">
+                <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">Result / Impact</h3>
+                <div className={`grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/10 ${
+                  project.metrics.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-4'
+                }`}>
+                  {project.metrics.map((m, i) => (<motion.div key={m.label} className="bg-ink p-4 sm:p-5" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5 + i * 0.07, duration: 0.5, ease: EASE }}>
+                      <p className="font-display text-3xl sm:text-4xl leading-none text-bone tracking-wide" style={{ color: i === 0 ? project.palette.accent : undefined }}>
+                        {m.value}
+                      </p>
+                      <p className="mt-2 text-xs leading-snug text-mist">{m.label}</p>
+                    </motion.div>))}
+                </div>
+              </motion.section>
+            )}
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[3fr_2fr]">
               <motion.section variants={block}>

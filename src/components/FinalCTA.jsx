@@ -4,6 +4,8 @@ import { profile } from '../data/portfolio';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
 import { SeriesMark } from './Poster';
+import SendMessage from './SendMessage';
+
 export default function FinalCTA({ onReplay }) {
     const ref = useRef(null);
     const { scrollTo } = useSmoothScroll();
@@ -45,6 +47,9 @@ export default function FinalCTA({ onReplay }) {
           </motion.div>))}
       </motion.div>
 
+      {/* Interactive Send A Message Contact Section */}
+      <SendMessage />
+
       <div className="relative mt-16 flex flex-wrap justify-center gap-6 text-xs font-semibold tracking-[0.24em] text-smoke">
         <button type="button" onClick={() => scrollTo(0, { offset: 0 })} className="hover:text-bone">
           ↺ WATCH AGAIN
@@ -54,7 +59,7 @@ export default function FinalCTA({ onReplay }) {
         </button>
       </div>
 
-      <footer className="absolute inset-x-0 bottom-0 px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-center">
+      <footer className="relative mt-20 w-full px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] text-center">
         <div className="mb-2 text-base">
           <SeriesMark />
         </div>
